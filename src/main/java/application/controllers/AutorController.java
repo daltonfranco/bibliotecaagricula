@@ -16,6 +16,7 @@ public class AutorController{
     @RequestMapping("/list")
     public String list(Model model){
         model.addAttribute("Autores", autorRepo.findAll());
+        return "list.jsp";
     }
 
 

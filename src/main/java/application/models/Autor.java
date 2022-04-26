@@ -11,12 +11,12 @@ import javax.persistence.GenerationType;
 
 public class Autor{
     @Id
-    @GeneratedValue(strategy = GeneratedType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private int id;
     private String nome;
 
-    public void setId(String id){
+    public void setId(int id){
         this.id = id;
     }
 
